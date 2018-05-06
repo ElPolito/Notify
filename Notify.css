@@ -1,0 +1,83 @@
+/* Put here what is relative to all the notification */
+.Notify{
+    position : absolute;
+    transition : all 0.3s;
+}
+
+/* Put here the different types of notification */
+.Notify.defaultType{
+    background: purple;
+}
+.Notify.error{
+    background: red;
+}
+.Notify.success{
+    background: green;
+}
+
+/* Put here the different themes */
+.Notify.defaultTheme{
+    top: -50px; left : 0; right: 0;
+    height: 50px;
+}
+.Notify.squareTheme{
+    opacity : 0;
+    border-radius: 5px;
+}
+
+/* Put here the different positions */
+.Notify.bottomLeft.squareTheme{
+    bottom : 5px; left : 5px;
+}
+.Notify.bottomRight.squareTheme{
+    bottom : 5px; right : 5px;
+}
+.Notify.topLeft.squareTheme{
+    top : 5px; left : 5px;
+}
+.Notify.topRight.squareTheme{
+    top : 5px; right : 5px;
+}
+
+/* Put here the different theme for the text */
+.Notify.defaultTheme .text{
+    display: block;
+    font-size: 40px;
+    vertical-align: middle;
+    margin-left: 25px;
+    font-style: normal;
+}
+.Notify.squareTheme .text{
+    display: block;
+    font-size: 20px;
+    vertical-align: middle;
+    margin: 20px 10px 10px 10px;
+    font-style: normal;
+    max-width: 300px;
+}
+
+/* Put here the different theme for the close button */
+.Notify.defaultTheme .close{
+    position: absolute;
+    font-size: 30px;
+    font-style : normal;
+    top : 7px;
+    right : 10px;
+    font-family: "Arial";
+}
+.Notify.squareTheme .close{
+    position: absolute;
+    font-size: 20px;
+    font-style: normal;
+    top: 2px; right: 5px;
+    font-family: "Arial";
+}
+
+/* Put here the transition */
+.Notify.defaultTheme.active{
+    top : 0;
+}
+.Notify.squareTheme.active{
+    opacity: 1;
+}
+
